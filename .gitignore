@@ -2,6 +2,8 @@
 Archieve/
 
 Resume_ChrisT_ref.pdf
+*.fdb_latexmk
+*.synctex.gz
 
 ## Core latex/pdflatex auxiliary files:
 *.aux
