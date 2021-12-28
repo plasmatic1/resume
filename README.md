@@ -1,22 +1,32 @@
-A single-page, one-column resume for software developers. It uses the base latex templates and fonts to provide ease of use and installation when trying to update the resume. The different sections are clearly documented and custom commands are used to provide consistent formatting. The three main sections in the resume are education, experience, and projects.
+# resume
 
-### Motivation
+A fork of `sb2nov/resume` but it's my resume instead.
 
-I created this template as managing a resume on Google Docs was hard and changing any formatting was too difficult since it had to be applied in multiple places.
+# Usage
 
-Most currently available templates either focus on two columns, or are multiple pages long that didn't work well for career fairs or online applications.
+I just use the LaTeX Workshop extension for VSCode to handle all of the building, but you still have to install the packages.
 
-### Build using Docker
+The required packages in `texlive_packages.txt`.  Installation is below:
+
+## Installing Packages
+
+### Linux
 
 ```sh
-docker build -t latex .
-docker run --rm -i -v "$PWD":/data latex pdflatex sourabh_bajaj_resume.tex
+cat texlive_packages.txt | xargs tlmgr install
 ```
 
-### Preview
+### Windows
 
-![Resume Screenshot](/resume_preview.png)
+```
+curl -o xargs.cmd https://raw.githubusercontent.com/DoctorLai/BatchUtils/master/xargs.cmd
+cat texlive_packages.txt | ./xargs tlmgr install
+```
 
-### License
+## Dump Installed Packages
 
-Format is MIT but all the data is owned by Sourabh Bajaj.
+```sh
+tlmgr list --only-installed --data name > texlive_packages.txt
+```
+
+_Note: I'm pretty sure that the installed packages is way more than is required to build the Resume, but I just dumped my current installation of TexLive, which only contains 5 or so packages that weren't already installed by default_
