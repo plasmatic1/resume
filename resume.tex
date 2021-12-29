@@ -86,6 +86,14 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
+% Code blocks
+% Source: https://tex.stackexchange.com/questions/36030/how-to-make-a-single-word-look-as-some-code
+
+\usepackage{xcolor}
+\definecolor{light-gray}{gray}{0.95}
+\newcommand{\code}[1]{\colorbox{light-gray}{\texttt{#1}}}
+
+%-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -171,24 +179,16 @@
           {Tester for WAC contest from 2019 until present}
       \resumeItemListEnd
     
-    \resumeSubheading
-      {Sunrise Senior Living}{Oakville, ON}
-      {Recitalist}{?? 2018 -- August 2019}
-      \resumeItemListStart
-        \resumeItem{Leadership}
-          {Organized group of }
-        \resumeItem{Playing}
-          {what do i add here lmao}
-      \resumeItemListEnd
-
     % \resumeSubheading
-    %   {Google}{Mountain View, CA}
-    %   {Software Engineer}{Oct 2016 - Present}
+    %   {Sunrise Senior Living}{Oakville, ON}
+    %   {Recitalist}{?? 2018 -- August 2019}
     %   \resumeItemListStart
-    %     \resumeItem{Tensorflow}
-    %       {TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models. Worked on APIs and performance for training models on Tensor Processing Units (TPU).}
+    %     \resumeItem{Leadership}
+    %       {Organized group of }
+    %     \resumeItem{Playing}
+    %       {what do i add here lmao}
     %   \resumeItemListEnd
-      
+
 % --------Multiple Positions Heading------------
 %    \resumeSubSubheading
 %     {Software Engineer I}{Oct 2014 - Sep 2016}
@@ -206,9 +206,11 @@
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeSubItem{CP Tools}
-      {put something here}
-    % \resumeSubItem{QuantSoftware Toolkit}
-    %   {Open source python library for financial data analysis and machine learning for finance.}
+      {Python module that contains a suite of tools for contests and practice: automated local testing against test cases, automated stress testing, and integration with browser extensions, among others}
+    \resumeSubItem{Algorithms/DS Library}
+      {Library with a variety of different data structures and algorithms (i.e. graphs, strings, combinatorics) built with customizability in mind.  Testing integration with \code{online-judge-tools/verification-helper} to ensure correctness}
+    \resumeSubItem{Personal Website}
+      {Personal website created using Jekyll, Nginx, and Django.  It also hosts a searchable library of my solutions to the DMOJ online judge}
   \resumeSubHeadingListEnd
 
 %
