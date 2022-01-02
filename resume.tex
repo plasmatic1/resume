@@ -54,6 +54,13 @@
   }
 }
 
+% Alternate of resumeItem without headings
+\newcommand{\resumeText}[1]{
+  \item\small{
+    \textbf{}{#1 \vspace{-2pt}}
+  }
+}
+
 % Just in case someone needs a heading that does not need to be in a list
 \newcommand{\resumeHeading}[4]{
     \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -131,14 +138,10 @@
       % \resumeItemListEnd
     \resumeSubheading
       {Canadian Computing Competition (Senior Division)}{Waterloo, ON}
-      {Honour Roll Placement}{Feb 2018, Feb 2020, Feb 2021}
+      {Honour Roll Placements}{Feb 2018, Feb 2020, Feb 2021}
       \resumeItemListStart
-        \resumeItem{2021}
-          {Placed 1st out of 2901 participants (Perfect score)}
-        \resumeItem{2020}
-          {Group 2 Honour Roll, placing in the top 2\% of participants}
-        \resumeItem{2018}
-          {Group 3 Honour Roll, placing in the top 5\% of participants}
+        \resumeText{Placed 1st out of 2901 participants (with a perfect score) in the 2021 Senior competition}
+        \resumeText{Placed in the Group 2 (~top 2\%) and Group 3 (~top 5\%) Honour Roll in the 2020 and 2018 Senior competitions respectively}
       \resumeItemListEnd
     
     \resumeSubheading
@@ -157,17 +160,17 @@
     
     \resumeSubheading
       {Codeforces LATOKEN Round 1}{Online}
-      {Contest organizer}{May 2020 -- June 2021}
+      {Organized algorithms competition with over 18,000 participants}{May 2020 -- June 2021}
       \resumeItemListStart
         \resumeItem{Organization}
-          {Worked with other problemsetters to host a competition with 18,000+ participants, gathered testers for problems, worked with Codeforces Administration to ensure smooth delivery of competition}
+          {Worked with other problemsetters and Codeforces Administration to gather testers and ensure smooth delivery of competition}
         \resumeItem{Problemsetting}
           {Generated ideas for problems, prepared problem statements and test data, created programs to validate correctness of data and graders}
       \resumeItemListEnd
     
     \resumeSubheading
       {DMOJ Problem Setter}{Online}
-      {Organized and tested programming competitions}{September 2018 -- Present}
+      {Organized and tested programming competitions}{September 2019 -- Present}
       \resumeItemListStart
         \resumeItem{Mock CCC}
           {Problemsetter for two mock CCC (Canadian Computing Competition) contests in 2020 and 2021}
@@ -175,8 +178,8 @@
           {Organizer and problemsetter for CPC competition in 2020 and 2021}
         \resumeItem{Olympiads School}
           {Created tasks for Olympiads School computer contest quizzes held at the end of each term}
-        \resumeItem{WAC}
-          {Tester for WAC contest from 2019 until present}
+        % \resumeItem{WAC}
+        %   {Tester for WAC contest from 2019 until present}
       \resumeItemListEnd
     
     % \resumeSubheading
@@ -205,12 +208,26 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{CP Tools}
-      {Python module that contains a suite of tools for contests and practice: automated local testing against test cases, automated stress testing, and integration with browser extensions, among others}
-    \resumeSubItem{Algorithms/DS Library}
-      {Library with a variety of different data structures and algorithms (i.e. graphs, strings, combinatorics) built with customizability in mind.  Testing integration with \code{online-judge-tools/verification-helper} to ensure correctness}
-    \resumeSubItem{Personal Website}
-      {Personal website created using Jekyll, Nginx, and Django.  It also hosts a searchable library of my solutions to the DMOJ online judge}
+    \resumeSubheading{CP Tools}{}
+      {Python module for Competitive Programming}{}
+      \resumeItemListStart
+        \resumeText{Python module that contains a suite of tools for algorithms problems, including automated local testing, stress testing tools, and integration with browser extensions}
+        \resumeText{Formerly a VSCode extension written in TypeScript with Vue and the VSCode API with similar functionality}
+      \resumeItemListEnd
+    \resumeSubheading{Algorithms \& Data Structures Library}{}
+      {60+ DS\&A templates built to be easily integrated into existing solutions}{}
+      \resumeItemListStart
+        \resumeText{Includes a variety of algorithms: graphs, strings, data structures, combinatorics and number theory, etc.}{}
+        \resumeText{Testing integration with GitHub actions and \code{online-judge-tools/verification-helper} to ensure correctness}
+      \resumeItemListEnd
+    \resumeSubheading{LetterGrid}{}
+      {Head-to-head online multiplayer game made for Hack the North 2021}{}
+      \resumeItemListStart
+        \resumeText{Typing-based strategy game where players race to opposite to opposite corners of a grid while blocking opponents}
+        \resumeText{Built using React for the UI and Flask on the backend}
+      \resumeItemListEnd
+    % \resumeSubheading{Personal Website}{}
+    %   {Personal website created using Jekyll, Nginx, and Django.  It also hosts a searchable library of my solutions to the DMOJ online judge}{}
   \resumeSubHeadingListEnd
 
 %
