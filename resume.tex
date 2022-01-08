@@ -11,6 +11,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{fontawesome}
 \input{glyphtounicode}
 
 \pagestyle{fancy}
@@ -94,14 +95,21 @@
 \newcommand{\code}[1]{\colorbox{light-gray}{\texttt{#1}}}
 %-------------------------------------------
 
+%-------------------
+% Links
+\colorlet{dark-blue}{blue!60!cyan}
+\newcommand{\link}[2]{\href{#1}{\color{dark-blue}\underline{#2}}}
+\newcommand{\linkblack}[2]{\href{#1}{\underline{#2}}}
+%-------------------
+
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://mosesxu.ca/}{\Large Moses Xu}} & Email : \href{mailto:moses@mosesxu.net}{moses@mosesxu.net}\\
-  \href{https://mosesxu.ca/}{https://mosesxu.ca} & Mobile : +1-647-225-1159 \\
+  \textbf{\Large Moses Xu \href{https://mosesxu.ca/}{\faLink}} & Email : \href{mailto:moses@mosesxu.net}{moses@mosesxu.net}\\
+  \href{https://github.com/plasmatic1/}{\faGithub\ plasmatic1} & Mobile : +1 (647) 225-1159 \\
 \end{tabular*}
 
 %-----------EDUCATION-----------------
@@ -125,8 +133,8 @@
       {Canadian Computing Competition (Senior Division) \& Olympiad}{Waterloo, ON}
       {National algorithms competition}{Feb 2018 -- Feb 2021}
       \resumeItemListStart
-        \resumeText{Silver Medalist at the 2021 Canadian Computing Olympiad, an invite-only team selection test for the Canadian IOI team made up of top CCC participants}
-        \resumeText{Placed 1st out of 2,901 participants (with a perfect score) in the 2021 competition}
+        \resumeText{Silver Medalist at the 2021 Canadian Computing Olympiad, an invite-only team selection test for the Canadian IOI team made up of top CCC participants ($\sim$40 were invited in 2021)}
+        \resumeText{Placed 1st out of 2,901 participants with a perfect score in the 2021 competition}
         % \resumeText{Placed $\sim$top 2\% and $\sim$top 5\% in the 2020 and 2018 competitions, placing in groups 2 and 3 of the Honour Roll}
       \resumeItemListEnd
 
@@ -150,8 +158,8 @@
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Codeforces LATOKEN Round 1}{Online}
-      {Organized algorithms competition with over 18,000 participants}{May 2020 -- June 2021}
+      {Codeforces LATOKEN Round 1 \link{https://codeforces.com/contest/1534}{\faLink\ Contest} \link{https://codeforces.com/profile/Plasmatic}{\faLink\ Profile}}{Online}
+      {Organized algorithms competition with \textbf{18,000+} participants}{May 2020 -- June 2021}
       \resumeItemListStart
         \resumeItem{Organization}
           {Worked with other problemsetters and Codeforces Administration to gather testers and ensure smooth delivery of competition}
@@ -160,13 +168,13 @@
       \resumeItemListEnd
     
     \resumeSubheading
-      {DMOJ Problem Setter}{Online}
-      {Organized and tested programming competitions}{Sept 2019 -- Present}
+      {DMOJ Problem Setter \link{https://dmoj.ca/user/Plasmatic}{\faLink\ Profile}}{Online}
+      {Organized and tested programming competitions with 100+ participants}{Sept 2019 -- Present}
       \resumeItemListStart
         \resumeItem{Mock CCC}
-          {Problemsetter for two Mock CCC (Canadian Computing Competition) contests in 2020 and 2021}
+          {Problemsetter for two Mock Canadian Computing Competition contests in \link{https://dmoj.ca/contest/mccc1}{2020} and \link{https://dmoj.ca/contest/rccc1}{2021}}
         \resumeItem{CPC}
-          {Organizer and problemsetter for the 2020 and 2021 competitions}
+          {Organizer and problemsetter for CPC contest in \link{https://dmoj.ca/contest/cpc19}{2019} and \link{https://dmoj.ca/contest/cpc21c1}{2021}}
         % \resumeItem{WAC}
         %   {Tester for WAC contest from 2019 until present}
       \resumeItemListEnd
@@ -186,19 +194,19 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubheading{CP Tools}{}
+    \resumeSubheading{Competitive Programming Tools \link{https://github.com/plasmatic1/competitive-programming-tools}{\faGithub\ VSCode} \link{https://github.com/plasmatic1/cp-tools-console}{\faGithub\ PY}}{}
       {Python module for Competitive Programming}{}
       \resumeItemListStart
         \resumeText{Python module that contains a suite of tools for algorithms problems, including automated local testing, stress testing tools, and integration with browser extensions}
         \resumeText{Formerly a VSCode extension written in TypeScript with Vue and the VSCode API with similar functionality}
       \resumeItemListEnd
-    \resumeSubheading{Algorithms \& Data Structures Library}{}
+    \resumeSubheading{Algorithms \& Data Structures Library \link{https://github.com/plasmatic1/templates}{\faGithub\ Repo}}{}
       {60+ DS\&A templates built to be easily integrated into existing solutions}{}
       \resumeItemListStart
         \resumeText{Includes a variety of algorithms: graphs, strings, data structures, combinatorics and number theory, etc.}{}
         \resumeText{Automated testing integration using GitHub actions with \code{online-judge-tools/verification-helper}}
       \resumeItemListEnd
-    \resumeSubheading{LetterGrid}{}
+    \resumeSubheading{LetterGrid \link{https://devpost.com/software/typecycles}{\faLink\ DevPost}}{}
       {Head-to-head online multiplayer game made for Hack the North 2021}{}
       \resumeItemListStart
         \resumeText{Typing-based strategy game where players race to opposite to opposite corners of a grid while blocking opponents}
