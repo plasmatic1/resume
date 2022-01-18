@@ -101,8 +101,8 @@
 %-------------------
 % Links
 \colorlet{linkblue}{blue!60!cyan}
-\newcommand{\link}[2]{\href{#1}{\color{linkblue}\underline{#2}}}
-\newcommand{\linkblack}[2]{\href{#1}{\underline{#2}}}
+\newcommand{\link}[2]{\href{#1}{#2}}
+\newcommand{\linkblack}[2]{\href{#1}{#2}}
 %-------------------
 
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -134,18 +134,18 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Canadian Computing Olympiad}{Waterloo, ON}
-      {Canada's most prestigious high school programming contest}{Feb 2018 -- Feb 2021}
+      {Canada's most prestigious high school programming/algorithms contest}{Feb 2018 -- Feb 2021}
       \resumeItemListStart
         \resumeText{2021 Canadian Computing Olympiad (CCO) Silver Medalist, an invite-only (top $\sim$40 CCC participants this year) team selection test for the Canadian IOI team}
-        \resumeText{2021 Canadian Computing Competition (CCC) -- Placed 1st out of 2,900+ participants with a perfect score}
+        \resumeText{2021 Canadian Computing Competition (CCC) -- Placed \textbf{1st} out of \textbf{2,900+} participants with a perfect score}
         % \resumeText{Placed $\sim$top 2\% and $\sim$top 5\% in the 2020 and 2018 competitions, placing in groups 2 and 3 of the Honour Roll}
       \resumeItemListEnd
 
     \resumeSubheading
       {Google Code Jam}{}
-      {Major algorithms competition that gathered 90,000+ participants last year}{Apr 2019 -- Present}
+      {Major algorithms competition that gathered \textbf{90,000+} participants last year}{Apr 2019 -- Present}
       \resumeItemListStart
-        \resumeText{Placed 3rd of Canadian participants in Round 3 2021 (165th overall)}
+        \resumeText{Placed \textbf{3rd} of Canadian participants in Round 3 2021 (165th overall)}
         \resumeText{Round 3 Qualifier in 2020 and 2021 (top 1,000 participants)}
       \resumeItemListEnd
     % \resumeItem{Competitive Programming}{Grandmaster on Codeforces (top $\sim$0.4\%), member of Waterloo Black ACM-ICPC team}
@@ -162,14 +162,14 @@
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Algorithms Contest Organizer (Codeforces and DMOJ)}{Online}
-      {Organized contests, created and prepared problems for programming competitions}{Sept 2019 -- Present}
+      {Programming Contest Organizer (Codeforces and DMOJ)}{Online}
+      {Organized contests, created and prepared algorithms problems}{Sep 2019 -- Present}
       \resumeItemListStart
-        \resumeItem{Codeforces LATOKEN Round 1}{\linkblack{https://codeforces.com/contest/1534}{Algorithms contest} with 18,000+ participants sponsored by LATOKEN.  Statements were written with Latex and problems were prepared in C++ using Codeforces' Polygon System}
+        \resumeItem{Codeforces LATOKEN Round 1}{Algorithms contest with \textbf{18,000+} participants sponsored by LATOKEN.  Statements were written with Latex and problems were prepared in C++ using Codeforces' Polygon System \linkblack{https://codeforces.com/contest/1534}{\faLink}}
         \resumeItem{Mock CCC}
-          {Problemsetter in \linkblack{https://dmoj.ca/contest/mccc1}{2020} and \linkblack{https://dmoj.ca/contest/rccc1}{2021} with 200+ participants}
+          {Contests in 2020 and 2021 with 200+ participants \linkblack{https://dmoj.ca/contest/mccc1}{\faLink} \linkblack{https://dmoj.ca/contest/rccc1}{\faLink}}
         \resumeItem{CPC}
-          {Organizer and problemsetter in \linkblack{https://dmoj.ca/contest/cpc19}{2019} and \linkblack{https://dmoj.ca/contest/cpc21c1}{2021} with 100+ participants}
+          {Contests in 2019 and 2021 with 100+ participants \linkblack{https://dmoj.ca/contest/cpc19}{\faLink} \linkblack{https://dmoj.ca/contest/cpc21c1}{\faLink}}
       \resumeItemListEnd
       % {Codeforces LATOKEN Round 1  \link{https://codeforces.com/profile/Plasmatic}{\faLink\ Profile}}{Online}
       % {Organized algorithms competition with 18,000+ participants}{May 2020 -- June 2021}
@@ -186,7 +186,7 @@
     
     \resumeSubheading
       {Focal Healthcare}{Toronto, ON}
-      {Test/Documentation Engineering}{August 2019}
+      {Test/Documentation Engineering}{Aug 2019}
       \resumeItemListStart
         \resumeText{Wrote scripts that formatted and validated product specifications and manual tests}
         \resumeText{Used Python with python-docx and xlsxwriter packages to parse documentation}
@@ -197,23 +197,22 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubheading{Competitive Programming Tools \link{https://github.com/plasmatic1/competitive-programming-tools}{\faGithub\ VSCode} \link{https://github.com/plasmatic1/cp-tools-console}{\faGithub\ PY}}{}
+    \resumeSubheading{Competitive Programming Tools \link{https://github.com/plasmatic1/competitive-programming-tools}{\faGithub} \link{https://github.com/plasmatic1/cp-tools-console}{\faGithub}}{}
       {Python module for Competitive Programming}{}
       \resumeItemListStart
-        \resumeText{Python module that contains a suite of tools for algorithms problems, including automated local testing, stress testing tools, and integration with browser extensions}
+        \resumeText{Contains a suite of tools for algorithms problems, including automated local testing, stress testing tools, and integration with browser extensions}
         \resumeText{Formerly a VSCode extension written in TypeScript with React.JS and the VSCode API with similar functionality}
       \resumeItemListEnd
-    \resumeSubheading{Algorithms \& Data Structures Library \link{https://github.com/plasmatic1/templates}{\faGithub\ Repo}}{}
+    \resumeSubheading{Algorithms \& Data Structures Library \link{https://github.com/plasmatic1/templates}{\faGithub}}{}
       {60+ Data Structures \& Algorithms templates (in C++) built to be easily integrated into existing solutions}{}
       \resumeItemListStart
         \resumeText{Includes a variety of algorithms: graphs, strings, data structures, combinatorics and number theory, etc.}{}
         \resumeText{Automated testing integration using GitHub actions with \textit{online-judge-tools/verification-helper}}
       \resumeItemListEnd
-    \resumeSubheading{LetterGrid \link{https://devpost.com/software/typecycles}{\faLink\ DevPost}}{}
-      {Head-to-head online multiplayer game made for Hack the North 2021}{}
+    \resumeSubheading{LetterGrid \link{https://devpost.com/software/typecycles}{\faLink}}{}
+      {Online head-to-head typing-based strategy game made for Hack the North 2021}{}
       \resumeItemListStart
-        \resumeText{Typing-based strategy game where players race to opposite to opposite corners of a grid while blocking opponents}
-        \resumeText{Built using React (UI), Flask (backend), and Socket.IO}
+        \resumeText{Built using React.JS (UI), Flask (backend), and Socket.IO (communication between client and server)}{}
       \resumeItemListEnd
     % \resumeSubheading{KitsPlus2 \link{https://github.com/plasmatic1/KitsPlus2}{\faGithub\ Repo}}{}
     %   {Minecraft Server plugin written }{}
@@ -227,12 +226,12 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Waterloo}{Ontario, ON}
-      {Candidate For Honours Bachelor of Computer Science;  GPA: 3.98}{Sept 2021 -- Present}
+      {Candidate For Honours Bachelor of Computer Science;  GPA: 3.98}{Sep 2021 -- Present}
       \resumeItemListStart
         \resumeItem{Coursework}
           {Algebra (Advanced) (98\%), Calculus (Advanced) (99\%), Designing Functional Programs (Advanced) (98\%)}
         \resumeItem{Scholarships}
-          {\$8,000 Faculty of Mathematics scholarship, \$2,000 President's scholarship for 95\%+ HS average}
+          {\$8,000 Faculty of Mathematics scholarship, \$2,000 President’s Scholarship of Distinction}
       \resumeItemListEnd
     % \resumeSubheading
     %   {Appleby College}{Oakville, ON}
