@@ -1,0 +1,48 @@
+\ProvidesPackage{fixedblocks}
+
+\usepackage{resumestyle}
+
+\newcommand{\header}{
+    \fontfamily{cmss}\selectfont
+
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\Large Moses Xu} & Email : \href{mailto:moses@mosesxu.net}{moses@mosesxu.net} \\
+    \href{https://mosesxu.ca/}{\faLink\ mosesxu.ca} & \href{https://github.com/plasmatic1/}{\faGithub\ plasmatic1}
+    \end{tabular*}
+
+    \vspace{-.1in}
+}
+
+\newcommand{\skills}{
+    \begin{resumeSection}{Skills}
+        \resumeItem{Languages}{Python, C/C++, HTML/CSS/JS, Java, Kotlin}
+        \vspace{-.05in}
+        \resumeItem{Tools/Frameworks}{Django, React, Git, Flask, Vue, Jekyll, \LaTeX}
+        \vspace{-.05in}
+        \resumeItem{Platforms}{Windows, Linux}
+    \end{resumeSection}
+}
+
+\newcommand{\educationUniversity}{
+    \resumeSubheading
+    {University of Waterloo}{Ontario, ON}
+    {Candidate For Honours Bachelor of Computer Science; Major Average: 97.8\%}{Sep 2021 -- Present}
+    \resumeItemListStart
+        \resumeItem{Coursework}
+            {Linear Algebra I (Adv) (95\%), Calculus II (Adv) (97\%), Elementary Algorithm Design and Data Abstraction (Adv) (100\%)}
+        \resumeItem{Scholarships}
+            {\$8,000 Faculty of Mathematics scholarship, \$2,000 President's Scholarship of Distinction}
+    \resumeItemListEnd
+}
+
+\newcommand{\educationHighschool}{
+    \resumeSubheading
+        {Appleby College}{Oakville, ON}
+        {Secondary School}{September 2017 -- June 2021}
+}
+
+\newcommand{\education}{
+    \begin{resumeSection}{Education}
+        \educationUniversity
+    \end{resumeSection}
+}
