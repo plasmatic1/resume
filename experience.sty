@@ -2,12 +2,23 @@
 
 \usepackage{resumestyle}
 
+\newcommand{\experienceAMD}{
+    \resumeSubheading
+        {AMD - Software Engineering Intern}{Online}
+        {Working on KMD debugging tools using C++ and Python}{May 2022 -- August 2022}
+        \resumeItemListStart
+            \resumeText{Implemented debugging tool to view hardware scheduling queue data}
+            \resumeText{Integrated format standardization into KMD debugging tools}
+            \resumeText{Maintained and updated CI and unit tests}
+        \resumeItemListEnd
+}
+
 \newcommand{\experienceContestOrganizer}{
     \resumeSubheading
-        {Programming Contest Organizer (Codeforces and DMOJ)}{Online}
-        {Organized contests, created and prepared algorithms problems}{Sep 2019 -- Present}
+        {Programming Contest Organizer}{Online}
+        {Organized contests, created and prepared algorithms problems using C++ and Python}{Sep 2019 -- Present}
         \resumeItemListStart
-            \resumeItem{Codeforces LATOKEN Round 1}{Algorithms contest with \textbf{18,000+} participants sponsored by LATOKEN.  Statements were written with Latex and problems were prepared in C++ using Codeforces' Polygon System \linkblack{https://codeforces.com/contest/1534}{\faLink}}
+            \resumeItem{Codeforces LATOKEN Round 1}{Algorithms contest with \textbf{18,000+} participants sponsored by LATOKEN.  Problems were prepared in C++ using Codeforces' Polygon System \linkblack{https://codeforces.com/contest/1534}{\faLink}}
             \resumeItem{Mock CCC}
                 {Contests in 2020 and 2021 with 200+ participants \linkblack{https://dmoj.ca/contest/mccc1}{\faLink} \linkblack{https://dmoj.ca/contest/rccc1}{\faLink}}
             \resumeItem{CPC}
@@ -39,6 +50,6 @@
         {Test/Documentation Engineering}{Aug 2019}
         \resumeItemListStart
             \resumeText{Wrote scripts that formatted and validated product specifications and manual tests}
-            \resumeText{Used Python with python-docx and xlsxwriter packages to parse documentation}
+            \resumeText{Used Python with python-docx and xlsxwriter packages}
         \resumeItemListEnd
 }
