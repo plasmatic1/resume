@@ -37,11 +37,19 @@
 }
 
 \newcommand{\projectsWebsite}{
-    \resumeSubheading{Website \link{https://mosesxu.ca/}{\faLink}}{}
-        {A multitude of web services supported with Docker and Nginx}{}
+    \resumeSubheading{Personal Webserver \link{https://mosesxu.ca/}{\faLink}}{}
+        {A multitude of web services managed with Docker and Nginx}{}
         \resumeItemListStart
-            \resumeText{Rating SVG badge service using TypeScript + Express}
-            \resumeText{DMOJ solution searcher using Python + Django}
-            \resumeText{Static website using Jekyll}
+            \resumeItem{Rating Badges}{Webservice hosting dynamic SVG badges using TypeScript + Express}
+            \resumeItem{DMOJ solution searcher}{Webservice hosting a solution database using Python + Django}
+            \resumeItem{Portfolio}{Static portfolio site using Jekyll}
+        \resumeItemListEnd
+}
+
+\newcommand{\projectWeplate}{
+    \resumeSubheading{WePlate}{}
+        {}{}
+        \resumeItemListStart
+            \resumeText{Managed deployment of service using Google Cloud}
         \resumeItemListEnd
 }
