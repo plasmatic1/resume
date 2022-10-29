@@ -5,11 +5,13 @@
 \newcommand{\experienceAMD}{
     \resumeSubheading
         {AMD: Software Engineering Intern}{Remote}
-        {Worked on driver debugging extension for WinDbg using \textbf{C++} and \textbf{Python}}{May 2022 -- Aug 2022}
+        {Worked on debugging tool for AMD kernel-mode drivers using \textbf{C++} and \textbf{Python}}{May 2022 -- Aug 2022}
         \resumeItemListStart
-            \resumeText{Implemented and integrated feature to view HWS hardware queues}
-            \resumeText{Integrated format standardization into extension}
-            \resumeText{Maintained extension codebase: includes updating test infrastructure with GoogleTest (Unit) and PyTest (CI), resolving issues raised by other AMD employees, and keeping ASIC information up-to-date.}
+            \resumeText{Implemented feature allowing driver developers to inspect hardware scheduling queues}
+            % \resumeText{Implemented and integrated feature to view HWS hardware queues}
+            \resumeText{Integrated complete overhaul of extension output formatting}
+            \resumeText{Maintained test infrastructure and ASIC database}
+            % \resumeText{Maintained extension codebase: includes updating test infrastructure with GoogleTest (Unit) and PyTest (CI), resolving issues raised by other AMD employees, and keeping ASIC information up-to-date.}
         \resumeItemListEnd
 }
 
@@ -19,9 +21,9 @@
         {Organized contests, created and prepared algorithms problems using \textbf{C++} and \textbf{Python}}{Sep 2019 -- Present}
         \resumeItemListStart
             \resumeItem{Codeforces LATOKEN Round 1}
-                {Algorithms contest with 18,000+ participants sponsored by LATOKEN.  Problems were prepared using Codeforces' Polygon System \linkblack{https://codeforces.com/contest/1534}{\faLink}}
+                {Algorithms contest with 18,000+ participants sponsored by LATOKEN.  Prepared problems using Polygon System \linkblack{https://codeforces.com/contest/1534}{\faLink} (C++)}
             \resumeItem{DMOJ Contests}
-                {Organized contests between 2019 and 2021 each with hundreds of participants \linkblack{https://mosesxu.ca/contests/\#problem-setting}{\faLink}}
+                {Organized contests each with hundreds of participants \linkblack{https://mosesxu.ca/contests/\#problem-setting}{\faLink}}
         \resumeItemListEnd
             % \resumeItem{Mock CCC}
             %     {Contests in 2020 and 2021 with 200+ participants \linkblack{https://dmoj.ca/contest/mccc1}{\faLink} \linkblack{https://dmoj.ca/contest/rccc1}{\faLink}}
@@ -57,11 +59,11 @@
 }
 
 \newcommand{\experienceWeplate}{
-    \resumeSubheading{WePlate \link{https://github.com/weplate/backend}{\faGithub}}{Remote}
+    \resumeSubheading{WePlate \link{https://github.com/weplate/backend}{\faGithub} -- Backend Engineer}{Remote}
         {Designed, developed, and deployed \textbf{Django} backend system for delivering insights on nutrition}{Jan 2022 -- June 2022}
         \resumeItemListStart
-            \resumeText{Created Simulated Annealing algorithm to generate optimized portion sizes based on given items}
-            \resumeText{Managed mass amounts of cafeteria schedule and nutritional data using Postgres and CloudSQL}
+            \resumeText{Created an algorithm using Simulated Annealing to generate optimized portion sizes for any meal choice}
+            \resumeText{Processed and served mass amounts of cafeteria scheduling and nutritional data (10,000+ items) using Django ORM}
             \resumeText{Managed deployment of service using Google Cloud}
         \resumeItemListEnd
 }
