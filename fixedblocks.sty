@@ -23,13 +23,22 @@
     \end{resumeSection}
 }
 
-\newcommand{\educationUniversity}{
+\newcommand{\educationCourseworkCS}{
+    \resumeItem{Coursework}
+        {Elementary Algorithm Design and Data Abstraction (Adv) (100\%), Object-Oriented Programming (Adv), Combinatorics (Adv), Foundation of Seq. Programs (Adv), Logic and Computation (Adv)}
+}
+
+\newcommand{\educationCourseworkOneB}{
+    \resumeItem{Coursework}
+        {Linear Algebra I (Adv) (95\%), Calculus II (Adv) (97\%), Elementary Algorithm Design and Data Abstraction (Adv) (100\%)}
+}
+
+\newcommand{\educationUniversity}[1]{
     \resumeSubheading
     {University of Waterloo}{Waterloo, ON}
     {Candidate For Honours Bachelor of Computer Science; Major Average: 97.8\%}{Sep 2021 -- Present}
     \resumeItemListStart
-        \resumeItem{Coursework}
-            {Linear Algebra I (Adv) (95\%), Calculus II (Adv) (97\%), Elementary Algorithm Design and Data Abstraction (Adv) (100\%)}
+        #1 % coursework
         \resumeItem{Scholarships}
             {\$8,000 Faculty of Mathematics scholarship, \$2,000 President's Scholarship of Distinction}
         % \resumeItem{ECNA 2021 (ACM-ICPC)}
@@ -44,8 +53,8 @@
         {Secondary School}{September 2017 -- June 2021}
 }
 
-\newcommand{\education}{
+\newcommand{\education}[1]{
     \begin{resumeSection}{Education}
-        \educationUniversity
+        \educationUniversity{#1}
     \end{resumeSection}
 }
