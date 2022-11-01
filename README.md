@@ -4,11 +4,13 @@ A fork of `sb2nov/resume` but it's my resume instead.
 
 # Usage
 
+Run `build.sh` or `Build.ps1` to build documents.  MAKE SURE TO DO THIS BEFORE COMMITTING.
+
+## Installing Packages
+
 I just use the LaTeX Workshop extension for VSCode to handle all of the building, but you still have to install the packages.
 
 The required packages in `texlive_packages.txt`.  Installation is below:
-
-## Installing Packages
 
 ### Linux
 
