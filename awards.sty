@@ -2,24 +2,32 @@
 
 \usepackage{resumestyle}
 
+\newcommand{\awardsCCOShort}{
+    \resumeItem{2021 Canadian Computing Olympiad}{Silver medalist, the CCO is an invite-only (top $\sim$40 CCC participants in 2021) team selection test for the Canadian IOI team}
+    \resumeItem{2021 Canadian Computing Competition}{Placed 1st out of 2,900+ participants at Canada's most prestigious high school programming contest}
+}
+
 \newcommand{\awardsCCO}{
     \resumeSubheading
         {Canadian Computing Olympiad}{Waterloo, ON}
         {Canada's most prestigious high school programming/algorithms contest}{Feb 2021 -- May 2021}
         \resumeItemListStart
-            \resumeText{2021 Canadian Computing Olympiad (CCO) \textbf{Silver Medalist}, an invite-only (top $\sim$40 CCC participants in 2021) team selection test for the Canadian IOI team}
-            \resumeText{2021 Canadian Computing Competition (CCC) -- Placed \textbf{1st} out of \textbf{2,900+} participants with a perfect score}
+            \resumeText{2021 Canadian Computing Olympiad (CCO) Silver Medalist, an invite-only (top $\sim$40 CCC participants in 2021) team selection test for the Canadian IOI team}
+            \resumeText{2021 Canadian Computing Competition (CCC) -- Placed 1st out of 2,900+ participants with a perfect score}
             % \resumeText{Placed $\sim$top 2\% and $\sim$top 5\% in the 2020 and 2018 competitions, placing in groups 2 and 3 of the Honour Roll}
         \resumeItemListEnd
 }
 
 \newcommand{\awardsGCJ}{
     \resumeSubheading
-        {Google Code Jam}{Remote}
-        {Major algorithms competition with \textbf{90,000+} participants in 2021}{Apr 2019 -- Present}
+        {Google Code Jam 2021}{}
+        {}{}
+        \vspace{-18pt}
+        % {Major algorithms competition with 90,000+ participants in 2021}{}
         \resumeItemListStart
-            \resumeText{Placed \textbf{3rd} of Canadian participants in Round 3 2021 (165th overall)}
-            \resumeText{Round 3 Qualifier in 2020 and 2021 (top 1,000 participants)}
+            \resumeText{Major algorithms competition with 90,000+ participants}
+            \resumeText{Placed 3rd of Canadian participants in Round 3 (165th overall)}
+            % \resumeText{Round 3 Qualifier in 2020 and 2021 (top 1,000 participants)}
         \resumeItemListEnd
 }
 
@@ -28,8 +36,7 @@
 }
 
 \newcommand{\awardsICPC}{
-    \resumeItem{Waterloo ICPC \& ECNA 2021}
-        {Placed \textbf{4th} at the ECNA 2021 regionals as part of top ACM-ICPC team \textbf{Waterloo Black}}
+    \resumeItem{ICPC ECNA Regionals 2021}{Placed 4th at the 2021 ECNA contest as part of top team Waterloo Black}
 }
     
 \newcommand{\awardsUSACO}{
@@ -39,4 +46,12 @@
         \resumeItemListStart
             \resumeText{5,409 users participated in the USACO 2021 Open}
         \resumeItemListEnd
+}
+
+\newcommand{\awardsSectionDefault}{
+    \begin{resumeSection}{Awards/Competitions}
+        \awardsICPC
+        \awardsGCJ
+        \awardsCCOShort
+    \end{resumeSection}
 }

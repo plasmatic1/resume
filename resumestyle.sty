@@ -27,6 +27,10 @@
 \addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 
+\usepackage{xcolor}
+\colorlet{heading-color}{teal!80!white}
+\colorlet{title-color}{black}
+
 \urlstyle{same}
 
 \raggedbottom
@@ -39,7 +43,7 @@
 % }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 \titleformat{\section}{
   \vspace{-4pt}\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+}{}{0em}{}[\color{black}\color{heading-color}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -93,7 +97,6 @@
 %-------------------------------------------
 % Code blocks
 % Source: https://tex.stackexchange.com/questions/36030/how-to-make-a-single-word-look-as-some-code
-\usepackage{xcolor}
 \definecolor{light-gray}{gray}{0.95}
 \newcommand{\code}[1]{\colorbox{light-gray}{\texttt{#1}}}
 %-------------------------------------------
@@ -107,4 +110,4 @@
 
 % Environment for wrapping single resume sections
 \newenvironment{resumeSection}[1]
-  {\section{#1}\resumeSubHeadingListStart}{\resumeSubHeadingListEnd}
+  {\section{\color{heading-color}#1}\resumeSubHeadingListStart}{\resumeSubHeadingListEnd}
