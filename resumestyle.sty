@@ -56,6 +56,15 @@
   }
 }
 
+% no auto bold of heading
+\newcommand{\resumeSubheadingNoAutoBold}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      #1 & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
 % Alternate of resumeItem without headings
 \newcommand{\resumeText}[1]{
   \item\small{

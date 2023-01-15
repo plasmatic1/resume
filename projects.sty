@@ -37,10 +37,25 @@
 }
 
 \newcommand{\projectsWebsite}{
-    \resumeSubheading{Personal Webserver \link{https://mosesxu.ca/}{\faLink}}{}
-        {Web services managed with Docker and Nginx}{}
-        \resumeItemListStart
-            \resumeItem{Rating Badges}{Dynamic SVG badges displaying user rating (TS, Express)}
-            \resumeItem{DMOJ solution searcher}{Searchable solution database of 1,400+ problems using Django}
-        \resumeItemListEnd
+    \resumeItem{Personal Webserver \link{https://mosesxu.ca/}{\faLink}}{Web services managed with Docker and Nginx}
+    \vspace{-5pt}
+    \resumeItem{Rating Badges}{Created microservice using TS and Express that generates dynamic SVG badges displaying online judge rating}
+    \vspace{-17pt}
+    \resumeItem{DMOJ solution searcher}{Created searchable solution database with 1,400+ problems using Django}
+}
+
+\newcommand{\projectAGE}{
+    \resumeItem{C++ Game Engine}{Designed and implemented OOP game engine on top of ncurses with built in entity movement, collision detection, and graphics library.}
+}
+
+\newcommand{\projectsDefault}{
+    \begin{resumeSection}{Projects}
+        \projectsCPTools
+        \vspace{-5pt}
+        \projectAGE
+        \vspace{-5pt}
+        % \projectsDSATemplates
+        \projectsWebsite
+        % \projectsLetterGrid
+    \end{resumeSection}
 }

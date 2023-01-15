@@ -3,8 +3,7 @@
 \usepackage{resumestyle}
 
 \newcommand{\awardsCCOShort}{
-    \resumeItem{2021 Canadian Computing Olympiad}{Silver medalist, the CCO is an invite-only (top $\sim$40 CCC participants in 2021) team selection test for the Canadian IOI team}
-    \resumeItem{2021 Canadian Computing Competition}{Placed 1st out of 2,900+ participants at Canada's most prestigious high school programming contest}
+    \resumeItem{CCC \& CCO 2021}{Placed 1st out of 2,900+ participants at Canada's most prestigious high school programming contest (CCC), qualifying for the CCO (top $\sim$40 CCC participants in 2021) and achieving a silver medal}
 }
 
 \newcommand{\awardsCCO}{
@@ -14,18 +13,16 @@
         \resumeItemListStart
             \resumeText{2021 Canadian Computing Olympiad (CCO) Silver Medalist, an invite-only (top $\sim$40 CCC participants in 2021) team selection test for the Canadian IOI team}
             \resumeText{2021 Canadian Computing Competition (CCC) -- Placed 1st out of 2,900+ participants with a perfect score}
-            % \resumeText{Placed $\sim$top 2\% and $\sim$top 5\% in the 2020 and 2018 competitions, placing in groups 2 and 3 of the Honour Roll}
         \resumeItemListEnd
 }
 
 \newcommand{\awardsGCJ}{
-    \resumeSubheading
-        {Google Code Jam 2021}{}
+    \resumeSubheadingNoAutoBold
+        {\textbf{Google Code Jam 2021}: Major algorithms competition with 90,000+ participants}{}
         {}{}
         \vspace{-18pt}
         % {Major algorithms competition with 90,000+ participants in 2021}{}
         \resumeItemListStart
-            \resumeText{Major algorithms competition with 90,000+ participants}
             \resumeText{Placed 3rd of Canadian participants in Round 3 (165th overall)}
             % \resumeText{Round 3 Qualifier in 2020 and 2021 (top 1,000 participants)}
         \resumeItemListEnd
@@ -51,7 +48,9 @@
 \newcommand{\awardsSectionDefault}{
     \begin{resumeSection}{Awards/Competitions}
         \awardsICPC
+        \vspace{-5pt}
         \awardsGCJ
+        \vspace{-5pt}
         \awardsCCOShort
     \end{resumeSection}
 }
