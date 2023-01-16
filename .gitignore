@@ -22,5 +22,6 @@ Resume_ChrisT_ref.pdf
 ##For Installation
 xargs.cmd
 
-# Cover letter stuff (not sure whether to publish yet)
-cover_letter
+##
+cover_letter/
+!cover_letter/template.sty
