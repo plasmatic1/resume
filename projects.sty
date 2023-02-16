@@ -3,12 +3,7 @@
 \usepackage{resumestyle}
 
 \newcommand{\projectsCPTools}{
-    \resumeSubheading{Competitive Programming Tools \link{https://github.com/plasmatic1/competitive-programming-tools}{\faGithub} \link{https://github.com/plasmatic1/cp-tools-console}{\faGithub}}{}
-        {Python module for Competitive Programming}{}
-        \resumeItemListStart
-            \resumeText{Tools that greatly speed up implementation and debugging during programming contests, including automated local testing, stress testing tools, and browser intrgration}
-            \resumeText{Also available as a VSCode extension with a convenient UI (TS, React)}
-        \resumeItemListEnd
+    \resumeItem{Competitive Programming Tools}{A suite of tools that greatly speed up implementation and debugging during programming contests, includes automated local testing, stress testing tools, and browser intrgration.  Available as a Python CLI tool or as a VSCode extension with a convenient UI (written with TypeScript and React.JS)}
 }
 
 \newcommand{\projectsDSATemplates}{
@@ -37,15 +32,13 @@
 }
 
 \newcommand{\projectsWebsite}{
-    \resumeItem{Personal Webserver \link{https://mosesxu.ca/}{\faLink}}{Web services managed with Docker and Nginx}
-    \vspace{-5pt}
-    \resumeItem{Rating Badges}{Created microservice using TS and Express that generates dynamic SVG badges displaying online judge rating}
-    \vspace{-17pt}
-    \resumeItem{DMOJ solution searcher}{Created searchable solution database with 1,400+ problems using Django}
+    \resumeItem{Personal Webserver \link{https://mosesxu.ca/}{\faLink}}{Webservices managed with Docker and Nginx.  Services include a personalized badge generator for online judges and a 1,400+ solution database for the DMOJ.  Technologies used include Django, TypeScript, and Express}
 }
 
-\newcommand{\projectAGE}{
-    \resumeItem{C++ Game Engine}{Designed and implemented object-oriented (OOP) game engine built around the MVC pattern.  The engine supports handling a variety of entities with built in entity movement, collision detection, and a graphics library.}
+\newcommand{\projectsSchool}{
+    \resumeItem{C++ Game Engine}{Designed and implemented object-oriented (OOP) game engine built around the MVC pattern.  The engine supports handling a variety of entities with built in entity movement, collision detection, and a graphics library}
+    \vspace{-5pt}
+    \resumeItem{LACS Compiler}{Scala program that compiles a simple functional programming language for the MIPS architecture.  Includes support for closures and nested functions, automatic garbage collection, and tail-call optimization}
 }
 
 \newcommand{\projectBukkit}{
@@ -56,7 +49,7 @@
     \begin{resumeSection}{Projects}
         \projectsCPTools
         \vspace{-5pt}
-        \projectAGE
+        \projectsSchool
         \vspace{-5pt}
         \projectsWebsite
         \vspace{-5pt}
