@@ -1,6 +1,7 @@
 \ProvidesPackage{fixedblocks}
 
 \usepackage{resumestyle}
+\usepackage{personalinfo}
 
 \newcommand{\header}{
     {
@@ -9,8 +10,9 @@
     \fontfamily{cmss}\selectfont
 
     \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-    \textbf{\Large Moses Xu} & Email : \href{mailto:moses@mosesxu.net}{moses@mosesxu.net} \\
-    \href{https://mosesxu.ca/}{\faLink\ mosesxu.ca} & \href{https://github.com/plasmatic1/}{\faGithub\ plasmatic1}
+    \textbf{\Large Moses Xu} & Email: \href{mailto:\email}{\email} \\
+    \href{https://mosesxu.ca/}{\faGlobe\ mosesxu.ca} & Phone: \phone \\
+    \href{https://github.com/plasmatic1/}{\faGithub\ plasmatic1} & \href{https://www.linkedin.com/in/moses-xu/}{\faLinkedinSquare\ moses-xu}
     \end{tabular*}
     }
 
@@ -21,9 +23,9 @@
 
 \newcommand{\skills}{
     \begin{resumeSection}{Skills}
-        \resumeItem{Languages}{Python, C/C++, HTML/CSS/JavaScript, Node.JS, TypeScript, Java, Kotlin, Scala, Haskell}
+        \resumeItem{Languages}{Python, C/C++, Java, Scala, Kotlin, JavaScript, TypeScript, Haskell}
         \vspace{-.05in}
-        \resumeItem{Tools/Frameworks}{Django, Flask, Express, Make, GDB, Valgrind, Docker, Nginx, React, Vue, Git}
+        \resumeItem{Tools/Frameworks}{Django, Flask, Make, GDB, Valgrind, Docker, Nginx, Git, Node.JS, Express, React, Vue}
         \vspace{-.05in}
         \resumeItem{Platforms}{Windows, Linux, Google Cloud Platform}
     \end{resumeSection}

@@ -4,13 +4,20 @@ A fork of `sb2nov/resume` but it's my resume instead.
 
 # Usage
 
-Run `build.sh` or `Build.ps1` to build documents.  MAKE SURE TO DO THIS BEFORE COMMITTING.
+First, you must populate `personalinfo.sty` with your personal information.  Such information is not committed onto GitHub.  The file should look like:
 
-## Installing Packages
+```latex
+\ProvidesPackage{personalinfo}
 
-I just use the LaTeX Workshop extension for VSCode to handle all of the building, but you still have to install the packages.
+\newcommand{\email}{XXX@XXX.XXX}
+\newcommand{\phone}{+X (XXX) XXX-XXXX}
+```
 
-The required packages in `texlive_packages.txt`.  Installation is below:
+Next, just run `build.sh` or `Build.ps1` (depending on OS) to build the PDFs.
+
+# Installation
+
+Doing a full TeXLive installation should be sufficient, but if there are packages you need, you can do the following:
 
 ### Linux
 
@@ -25,10 +32,8 @@ curl -o xargs.cmd https://raw.githubusercontent.com/DoctorLai/BatchUtils/master/
 cat texlive_packages.txt | ./xargs tlmgr install
 ```
 
-## Dump Installed Packages
+## Dumping Installed Packages
 
 ```sh
 tlmgr list --only-installed --data name > texlive_packages.txt
 ```
-
-_Note: I'm pretty sure that the installed packages is way more than is required to build the Resume, but I just dumped my current installation of TexLive, which only contains 5 or so packages that weren't already installed by default_
