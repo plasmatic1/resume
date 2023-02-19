@@ -1,11 +1,12 @@
-# Archieve
-Archieve/
+# Archive
+Archive/
 
 Resume_ChrisT_ref.pdf
 *.fdb_latexmk
 *.synctex.gz
 
 ## Core latex/pdflatex auxiliary files:
+*.pdf
 *.aux
 *.lof
 *.log
@@ -21,7 +22,3 @@ Resume_ChrisT_ref.pdf
 
 ##For Installation
 xargs.cmd
-
-##
-cover_letter/
-!cover_letter/template.sty
