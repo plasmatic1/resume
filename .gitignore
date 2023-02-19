@@ -20,5 +20,9 @@ Resume_ChrisT_ref.pdf
 *.cb2
 .*.lb
 
-##For Installation
+## Cover Letters
+cover_letter/
+!cover_letter/template.sty
+
+## For Installation
 xargs.cmd
