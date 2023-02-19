@@ -1,11 +1,4 @@
-# Archive
-Archive/
-
-Resume_ChrisT_ref.pdf
-*.fdb_latexmk
-*.synctex.gz
-
-## Core latex/pdflatex auxiliary files:
+# Core latex/pdflatex auxiliary files:
 *.pdf
 *.aux
 *.lof
@@ -19,10 +12,17 @@ Resume_ChrisT_ref.pdf
 *.cb
 *.cb2
 .*.lb
+*.fdb_latexmk
+*.synctex.gz
 
-## Cover Letters
+# Cover letters
 cover_letter/
 !cover_letter/template.sty
 
-## For Installation
+# Personal information
+personalinfo.sty
+
+# Old stuff to ignore
+Archive/
+Resume_ChrisT_ref.pdf
 xargs.cmd
