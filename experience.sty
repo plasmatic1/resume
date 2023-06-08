@@ -2,6 +2,15 @@
 
 \usepackage{resumestyle}
 
+\newcommand{\experienceHuawei}{
+    \resumeSubheading{Huawei -- Data Center Network Engineering Intern}{Waterloo, ON}
+    {Designing and engineering software for high-throughput, low-latency connections}{May 2023 -- Present}
+    \resumeItemListStart
+        \resumeText{Creating a Unix-like library for UDP on top of DPDK, significantly improving performance over existing Kernel solutions}
+        \resumeText{Designing a UDP based transport-layer protocol that ensures reliable and high-performance data transfer on file storage networks}
+    \resumeItemListEnd
+}
+
 \newcommand{\experienceAMD}{
     \resumeSubheading
         {AMD -- Software Engineering Intern}{Remote}
@@ -70,8 +79,8 @@
 
 \newcommand{\experiencesDefault}{
     \begin{resumeSection}{Experience}
+        \experienceHuawei
         \experienceAMD
         \experienceWeplate
-        \experienceContestOrganizer
     \end{resumeSection}
 }

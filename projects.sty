@@ -35,9 +35,11 @@
     \resumeItem{Personal Webserver \link{https://mosesxu.ca/}{\faLink}}{Webservices managed with Docker and Nginx.  Services include a personalized badge generator for online judges and a 1,400+ solution database for the DMOJ.  Technologies used include Django, TypeScript, and Express}
 }
 
-\newcommand{\projectsSchool}{
+\newcommand{\projectSchoolCPP}{
     \resumeItem{C++ Game Engine}{Designed and implemented object-oriented (OOP) game engine built around the MVC pattern.  The engine supports handling a variety of entities with built in entity movement, collision detection, and a graphics library}
-    \vspace{-2pt}
+}
+
+\newcommand{\projectSchoolCompiler}{
     \resumeItem{LACS Compiler}{Scala program that compiles a simple functional programming language for the MIPS architecture.  Includes support for closures, nested functions, static typing, automatic garbage collection, and tail-call optimization}
 }
 
@@ -47,9 +49,11 @@
 
 \newcommand{\projectsDefault}{
     \begin{resumeSection}{Projects}
+        \projectSchoolCPP
+        \vspace{-2pt}
         \projectsCPTools
         \vspace{-2pt}
-        \projectsSchool
+        \projectSchoolCompiler
         \vspace{-2pt}
         \projectBukkit
 
