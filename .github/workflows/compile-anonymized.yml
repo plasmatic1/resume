@@ -10,22 +10,25 @@ jobs:
       with:
         persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
         fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
-    - name: Create default personal data file
+    - name: Generate source files
       run: |
         cp personalinfo_default.sty personalinfo.sty
+        for f in resume*.tex; do
+          cp $f ${f%.*}_anonymized.tex
+        done
     - name: Compile resumes
       uses: xu-cheng/latex-action@v2
       with:
-        root_file: "resume*.tex"
+        root_file: "resume*_anonymized.tex"
         glob_root_file: true
     - name: Stage changes
       run: |
-        git add -f resume*.pdf
+        git add -f resume*_anonymized.pdf
     - name: Commit files
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git commit -a -m "Compile anonymized resume for commit ${GITHUB_SHA}"
+        git commit -a -m "Compile anonymized resumes for commit ${GITHUB_SHA}"
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
