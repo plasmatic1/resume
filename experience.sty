@@ -3,8 +3,8 @@
 \usepackage{resumestyle}
 
 \newcommand{\experienceHuawei}{
-    \resumeSubheading{Huawei -- Data Center Network Engineering Intern}{Waterloo, ON}
-    {Engineering software for high-throughput, low-latency data transfer in file storage networks (C, DPDK)}{May 2023 -- Present}
+    \resumeSubheading{Huawei -- Network Engineering Intern}{May 2023 -- Present}
+    {Engineering software for high-throughput, low-latency data transfer in file storage networks (C, DPDK)}{}
     \resumeItemListStart
         \resumeText{Creating a UDP socket library on top of DPDK, with potential for 18x speed improvement over Linux kernel sockets}
         \resumeText{Developing a transport protocol to ensure reliable data delivery over UDP while maintaining performance}
@@ -13,14 +13,12 @@
 
 \newcommand{\experienceAMD}{
     \resumeSubheading
-        {AMD -- Software Engineering Intern}{Remote}
-        {Developed and maintained debugging tool for 200+ KMD developers across AMD (C++, Python)}{May 2022 -- Aug 2022}
+        {AMD -- Software Engineering Intern}{May 2022 -- Aug 2022}
+        {Improved and maintained driver debugger for 200+ KMD developers across AMD (C++, Python)}{}
         \resumeItemListStart
             \resumeText{Added feature to inspect hardware scheduled queues, enabling debugging of critical launch-gating issues}
-            % \resumeText{Implemented and integrated feature to view HWS hardware queues}
-            \resumeText{Proposed and implemented improvements used across unit (GTest, GMock) and CI test infrastructure, reducing development time and increasing accuracy.}
-            \resumeText{Implemented overhaul of extension UI library, creating consistency in the output format and removing the need for manual formatting}
-            % \resumeText{Maintained extension codebase: includes updating test infrastructure with GoogleTest (Unit) and PyTest (CI), resolving issues raised by other AMD employees, and keeping ASIC information up-to-date.}
+            \resumeText{Proposed and implemented improvements used across unit (GTest, GMock) and CI test infrastructure, reducing code size by over 50\% in relevant tests}
+            \resumeText{Automated formatting of tables and nested lists, ensuring consistent extension output and deduplication of formatting code}
         \resumeItemListEnd
 }
 
@@ -68,12 +66,12 @@
 }
 
 \newcommand{\experienceWeplate}{
-    \resumeSubheading{WePlate \link{https://github.com/weplate/backend}{\faGithub} -- Backend Engineer}{Remote}
-        {Designed, developed, and deployed (Python \& Django) backend system for nutritional insights}{Jan 2022 -- June 2022}
+    \resumeSubheading{WePlate \link{https://github.com/weplate/backend}{\faGithub} -- Backend Engineer}{Jan 2022 -- June 2022}
+        {Designed, developed, and deployed backend system for nutritional insights (Python, Django)}{}
         \resumeItemListStart
-            \resumeText{Created a Simulated Annealing algorithm to generate optimized portion sizes}
-            \resumeText{Processed and served mass amounts of cafeteria scheduling and nutritional data (10,000+ items)}
-            \resumeText{Deployed and updated scalable Django webservice using GCP AppEngine and CloudSQL}
+            \resumeText{Processed and served 10,000+ cafeteria scheduling and nutritional items}
+            \resumeText{Implemented Simulated Annealing algorithm to generate optimized portion sizes}
+            \resumeText{Deployed project as scalable webservice using GCP AppEngine and CloudSQL}
         \resumeItemListEnd
 }
 
