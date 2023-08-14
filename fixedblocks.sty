@@ -3,47 +3,65 @@
 \usepackage{resumestyle}
 \usepackage{personalinfo}
 
+% \newcommand{\header}{
+%     {
+%     \color{title-color}
+
+%     \fontfamily{cmss}\selectfont
+
+%     \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%     \textbf{\Large \name} & Email: \href{mailto:\email}{\email} \\
+%     \href{https://\website/}{\faGlobe\ \website} & Phone: \phone \\
+%     \href{https://github.com/\github/}{\faGithub\ \github} & \href{https://www.linkedin.com/in/\linkedin/}{\faLinkedinSquare\ \linkedin}
+%     \end{tabular*}
+%     }
+
+%     \fontfamily{cmss}\selectfont
+
+%     \vspace{-.1in}
+% }
+
+\newcommand{\headerSep}{\ \ \textbullet \ \ \ }
+
 \newcommand{\header}{
     {
     \color{title-color}
 
     \fontfamily{cmss}\selectfont
 
-    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-    \textbf{\Large \name} & Email: \href{mailto:\email}{\email} \\
-    \href{https://\website/}{\faGlobe\ \website} & Phone: \phone \\
-    \href{https://github.com/\github/}{\faGithub\ \github} & \href{https://www.linkedin.com/in/\linkedin/}{\faLinkedinSquare\ \linkedin}
-    \end{tabular*}
+    \begin{center}
+        {\fontseries{bx}\selectfont \huge \name}
+        \vspace{6pt}
+
+        \href{mailto:\email}{\faEnvelope\ \email}
+            \headerSep
+        \faPhoneSquare\ \phone
+            \headerSep
+        \href{https://\website/}{\faGlobe\ \website}
+            \headerSep
+        \href{https://github.com/\github/}{\faGithub\ \github}
+            \headerSep
+        \href{https://www.linkedin.com/in/\linkedin/}{\faLinkedinSquare\ \linkedin}
+    \end{center}
     }
 
     \fontfamily{cmss}\selectfont
 
-    \vspace{-.1in}
+    \vspace{-.15in}
 }
 
 \newcommand{\skills}{
     \begin{resumeSection}{Skills}
-        \resumeItem{Languages/Tools}{C, C++, Python, Java, Rust, Scala, JS/TS, Bash, DPDK, Docker, Nginx, Django, Flask, Node, Express}
+        \resumeItem{Languages}{C, C++, Python, Java, Scala, Bash, Rust, JavaScript, TypeScript}
         \vspace{-.05in}
-        \resumeItem{Techniques}{Data Structures, Algorithms, Concurrency, Computer Networks, Databases, Object-Oriented Programming}
-        \vspace{-.05in}
-        \resumeItem{Platforms}{Windows, Linux, Google Cloud Platform}
+        \resumeItem{Tools/Platforms}{Linux, Docker, Nginx, DPDK, Django, Flask, Node, Express, Google Cloud Platform}
     \end{resumeSection}
 }
 
-\newcommand{\educationCourseworkCS}{
+\newcommand{\educationCoursework}{
     \resumeItem{Coursework}
-        {Object Oriented Programming, Data Structures, Statistics, Linear Algebra, Combinatorics}
-}
-
-\newcommand{\educationCourseworkOneB}{
-    \resumeItem{Coursework}
-        {Linear Algebra I (Adv) (95\%), Calculus II (Adv) (97\%), Elementary Algorithm Design and Data Abstraction (Adv) (100\%)}
-}
-
-\newcommand{\educationCourseworkTwoB}{
-    \resumeItem{Coursework}
-        {Object Oriented Programming (Adv) (100\%), Foundations of Sequential Programs (Adv) (99\%), Data Structures (Adv) (93\%), Statistics (Adv) (94\%), Combinatorics (Adv) (98\%)}
+        {Operating Systems, Algorithms, Data Structures, Object Oriented Programming, Statistics, Linear Algebra, Combinatorics}
+    \vspace{2pt}
 }
 
 \newcommand{\educationUniversity}[1]{
@@ -63,7 +81,7 @@
 \newcommand{\educationHighschool}{
     \resumeSubheading
         {Appleby College}{Oakville, ON}
-        {Secondary School}{September 2017 -- June 2021}
+        {Secondary School}{Sep 2017 -- Jun 2021}
 }
 
 \newcommand{\education}[1]{
