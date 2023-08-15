@@ -4,14 +4,14 @@
 \usepackage[T1]{fontenc}
 
 \newcommand{\experienceHuawei}{
-    \resumeSubheading{Huawei -- Network Engineering Intern}{May 2023 -- Present}
-    {Engineering protocols and libraries for high-throughput, low-latency networks (C, DPDK)}{}
+    \resumeSubheading{Huawei -- Software Engineering Intern (Computer Networks)}{May 2023 -- Aug 2023}
+    {Engineering protocols and libraries for high-performance, low-latency networks (C, DPDK)}{}
     \resumeItemListStart
-        \resumeText{Created library using Dataplane Development Kit (DPDK) to process UDP packets, with up to 18x speed improvement over Linux kernel}
-        \resumeText{Collaborated to design a connectionless but reliable transport protocol applicable in high-performance scenarios}
-        \resumeText{Designed and implemented library for the protocol in C, employing concurrent data structures and message passing to achieve processing of 150+ simultaneous connections on a single machine} % maybe mention 10gbps
+        \resumeText{Created library using Dataplane Development Kit (DPDK) to process UDP packets, with up to 18x speed improvement over Linux kernel sockets}
+        \resumeText{Collaborated to design a UDP-based connectionless and reliable transport layer protocol}
+        \resumeText{Designed and implemented library for the protocol in C, employing lock-free data structures and message passing to achieve processing of 150+ concurrent connections on a single machine} % maybe mention 10gbps
         \resumeText{Developed logging software to track and troubleshoot performance with minimal (\texttt{\textless}\texttt{\textless}1\%) impact on runtime}
-        \resumeText{Used tools such as gprof, gdb, and tcpdump to resolve complex performance, networking, and concurrency issues}
+        \resumeText{Used tools such as gprof, gdb, and dpdk-pdump to resolve complex performance, networking, and concurrency issues}
     \resumeItemListEnd
 }
 
