@@ -4,11 +4,11 @@
 \usepackage[T1]{fontenc}
 
 \newcommand{\experienceHuawei}{
-    \resumeSubheading{Huawei -- Software Engineering Intern (Computer Networks)}{May 2023 -- Aug 2023}
+    \resumeSubheading{Huawei -- Software Engineering Intern (Computer Networking R\&D)}{May 2023 -- Aug 2023}
     {Engineering protocols and libraries for high-performance, low-latency networks (C, DPDK)}{}
     \resumeItemListStart
         \resumeText{Created library using Dataplane Development Kit (DPDK) to process UDP packets, with up to 18x speed improvement over Linux kernel sockets}
-        \resumeText{Collaborated to design a UDP-based connectionless and reliable transport layer protocol}
+        \resumeText{Collaborated to design a connectionless and reliable transport layer protocol on top of UDP}
         \resumeText{Designed and implemented library for the protocol in C, employing lock-free data structures and message passing to achieve processing of 150+ concurrent connections on a single machine} % maybe mention 10gbps
         \resumeText{Developed logging software to track and troubleshoot performance with minimal (\texttt{\textless}\texttt{\textless}1\%) impact on runtime}
         \resumeText{Used tools such as gprof, gdb, and dpdk-pdump to resolve complex performance, networking, and concurrency issues}
@@ -18,7 +18,7 @@
 \newcommand{\experienceAMD}{
     \resumeSubheading
         {AMD -- Software Engineering Intern}{May 2022 -- Aug 2022}
-        {Developed and maintained debugger for 200+ Kernel-Mode Driver  developers across AMD (C++, Python)}{}
+        {Developed and maintained debugger for 200+ Kernel-Mode Driver developers across AMD (C++, Python)}{}
         \resumeItemListStart
             \resumeText{Added feature to inspect hardware scheduled queues, enabling debugging of critical launch-gating issues}
             \resumeText{Proposed and implemented improvements used across unit (GTest, GMock) and CI test infrastructure, reducing test code size by up to 50\%}
@@ -74,8 +74,8 @@
         {Designed, developed, and deployed backend system for nutritional insights (Python, Django)}{}
         \resumeItemListStart
             \resumeText{Processed and served 10,000+ cafeteria scheduling and nutritional items using Django REST Framework}
-            \resumeText{Implemented Simulated Annealing algorithm to autogenerate portion sizes optimized for nutritional value}
-            \resumeText{Deployed project as scalable webservice using GCP AppEngine and CloudSQL}
+            \resumeText{Implemented Simulated Annealing algorithm to generate portion sizes optimized for nutritional value}
+            \resumeText{Deployed project as scalable webservice using Google Cloud AppEngine and CloudSQL}
         \resumeItemListEnd
 }
 
