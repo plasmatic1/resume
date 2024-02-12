@@ -3,6 +3,12 @@
 \usepackage{resumestyle}
 \usepackage[T1]{fontenc}
 
+\newcommand{\experienceNvidia}{
+    \resumeSubheading{NVIDIA -- Software Engineering Intern (GeForce NOW Core Streaming)}{Jan 2024 -- Apr 2024}
+    {Engineering a high-performance video snapshotting tool to replay, troubleshoot, and collect metrics on streams (C++, Python)}{}
+    \vspace{-12pt}
+}
+
 \newcommand{\experienceHuawei}{
     \resumeSubheading{Huawei -- Software Engineering Intern (Computer Networking R\&D)}{May 2023 -- Aug 2023}
     {Engineering protocols and libraries for high-performance, low-latency networks (C, DPDK)}{}
@@ -71,16 +77,16 @@
 
 \newcommand{\experienceWeplate}{
     \resumeSubheading{WePlate \link{https://github.com/weplate/backend}{\faGithub} -- Backend Engineer}{Jan 2022 -- Jun 2022}
-        {Designed, developed, and deployed backend system for nutritional insights (Python, Django)}{}
+        {Designed, developed, and deployed backend system for nutritional insights (Python, Django, Google Cloud)}{}
         \resumeItemListStart
             \resumeText{Processed and served 10,000+ cafeteria scheduling and nutritional items using Django REST Framework}
             \resumeText{Implemented Simulated Annealing algorithm to generate portion sizes optimized for nutritional value}
-            \resumeText{Deployed project as scalable webservice using Google Cloud AppEngine and CloudSQL}
         \resumeItemListEnd
 }
 
 \newcommand{\experiencesDefault}{
     \begin{resumeSection}{Experience}
+        \experienceNvidia
         \experienceHuawei
         \experienceAMD
         \experienceWeplate
