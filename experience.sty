@@ -4,15 +4,20 @@
 \usepackage[T1]{fontenc}
 
 \newcommand{\experienceDeshaw}{
-    \resumeSubheading{(Incoming) D. E. Shaw \& Co -- Software Engineering Intern}{June 2024 -- Aug 2024}
+    \resumeSubheading{(Incoming) D. E. Shaw \& Co. -- Software Engineering Intern}{June 2024 -- Aug 2024}
     {Researching and implementing real-time distributed systems for trading activites}{}
     \vspace{-12pt}
 }
 
 \newcommand{\experienceNvidia}{
     \resumeSubheading{NVIDIA -- Software Engineering Intern (GeForce NOW Core Streaming)}{Jan 2024 -- Apr 2024}
-    {Engineering a high-performance video snapshotting tool to replay, troubleshoot, and collect metrics on streams (C++, Python)}{}
-    \vspace{-12pt}
+    {Built a high-performance video snapshotting tool to troubleshoot GeForce NOW issues, a product with 20 million users (C++)}{}
+    \resumeItemListStart
+        \resumeText{Developed snapshot tool to capture snapshots of raw frames and encoded bitstream on streaming servers, allowing the client to highlight corruption and other video-related issues}
+        \resumeText{Implemented raw frame capture tool that could process 750 MB/s of video (4K 60fps NV12 frames) without performance hits (< 1fps drop)}
+        \resumeText{Updated video stream networking protocol to support remote configuration, triggering, and feedback for the snapshot feature directly from the client}
+        \resumeText{Collaborated with senior team members to assess requirements, scope, and design of the feature}
+    \resumeItemListEnd
 }
 
 \newcommand{\experienceHuawei}{
@@ -23,7 +28,7 @@
         \resumeText{Collaborated to design a connectionless and reliable transport layer protocol on top of UDP}
         \resumeText{Designed and implemented library for the protocol in C, employing lock-free data structures and message passing to achieve processing of 150+ concurrent connections on a single machine} % maybe mention 10gbps
         \resumeText{Developed logging software to track and troubleshoot performance with minimal (\texttt{\textless}\texttt{\textless}1\%) impact on runtime}
-        \resumeText{Used tools such as gprof, gdb, and dpdk-pdump to resolve complex performance, networking, and concurrency issues}
+        % \resumeText{Used tools such as gprof, gdb, and dpdk-pdump to resolve complex performance, networking, and concurrency issues}
     \resumeItemListEnd
 }
 
@@ -33,7 +38,7 @@
         {Developed and maintained debugger for 200+ Kernel-Mode Driver developers across AMD (C++, Python)}{}
         \resumeItemListStart
             \resumeText{Added feature to inspect hardware scheduled queues, enabling debugging of critical launch-gating issues}
-            \resumeText{Proposed and implemented improvements used across unit (GTest, GMock) and CI test infrastructure, reducing test code size by up to 50\%}
+            \resumeText{Proposed and implemented improvements across unit test (GTest) and CI pipeline, reducing test code size by up to 50\%}
             \resumeText{Automated formatting of tables, nested lists, and dictionaries, ensuring consistent output and deduplication of code}
         \resumeItemListEnd
 }
@@ -96,6 +101,6 @@
         \experienceNvidia
         \experienceHuawei
         \experienceAMD
-        \experienceWeplate
+        % \experienceWeplate
     \end{resumeSection}
 }
