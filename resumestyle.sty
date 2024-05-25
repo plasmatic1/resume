@@ -89,6 +89,17 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeProject}[3]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} | \textbf{\textit{\small#2}} \\
+    \end{tabular*} 
+    \vspace{-5pt}
+    \resumeItemListStart
+      \resumeText{#3}
+    \resumeItemListEnd
+}
+
 \newcommand{\resumeSubheadingNoSkills}[4]{
   \item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
