@@ -35,13 +35,25 @@
     \resumeItem{Personal Webserver \link{https://mosesxu.ca/}{\faLink}}{Webservices managed with Docker and Nginx.  Services include a personalized badge generator for online judges and a 1,400+ solution database for the DMOJ.  Technologies used include Django, TypeScript, and Express}
 }
 
+\def\projectSchoolCPPDesc{Created a game engine with entities, movement patterns, collision detection, and a graphics library}
+\def\projectSchoolCompilerDesc{Built compiler for functional language targeting MIPS.  Supports closures, nested functions, static typing, garbage collection, and tail-call optimization}
+
 \newcommand{\projectSchoolCPP}{
-    \resumeProject{C++ Game Engine}{C++, MVC Pattern}{Designed and implemented object-oriented (OOP) game engine that supports handling a variety of entities along with built in entity movement, collision detection, and a graphics library}
+    \resumeProject{C++ Game Engine}{C++}{\projectSchoolCPPDesc}
 }
 
 \newcommand{\projectSchoolCompiler}{
-    \resumeProject{LACS Compiler}{Scala, MIPS Assembly}{Built compiler for functional language targeting MIPS.  Includes support for closures, nested functions, static typing, garbage collection, and tail-call optimization}
+    \resumeProject{LACS Compiler}{Scala, MIPS Assembly}{\projectSchoolCompilerDesc}
 }
+
+\newcommand{\projectSchoolCPPShort}{
+    \resumeItem{Game Engine (C++)}{\projectSchoolCPPDesc}
+}
+
+\newcommand{\projectSchoolCompilerShort}{
+    \resumeItem{LACS Compiler (Scala, MIPS Assembly)}{\projectSchoolCompilerDesc}
+}
+
 
 \newcommand{\projectBukkit}{
     % \resumeItem{Minecraft Server Plugins}{Used Java, Kotlin, and the Spigot API  to add features such as KitPVP mechanics, custom bosses, and hats}
@@ -57,10 +69,10 @@
     \begin{resumeSection}{Projects}
         % \projectMossRust
         % \vspace{-2pt}
-        \projectSchoolCPP
+        \projectSchoolCPPShort
         % \projectsCPTools
-        % \vspace{-2pt}
-        \projectSchoolCompiler
+        \ungap
+        \projectSchoolCompilerShort
 
         % \vspace{-2pt}
         % \projectBukkit

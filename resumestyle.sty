@@ -24,7 +24,7 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-0.7in}
+\addtolength{\topmargin}{-0.55in}
 \addtolength{\textheight}{1.0in}
 
 \usepackage{xcolor}
@@ -50,6 +50,9 @@
 
 %-------------------------
 % Custom commands
+
+\def\ungap{\vspace{-.04in}}
+
 \newcommand{\resumeItem}[2]{
   \item\small{
     \textbf{#1}{: #2 \vspace{-4pt}}
@@ -92,7 +95,7 @@
 \newcommand{\resumeProject}[3]{
   \item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} | \textbf{\textit{\small#2}} \\
+      \textbf{#1} | \textbf{\small#2} \\
     \end{tabular*} 
     \vspace{-5pt}
     \resumeItemListStart
