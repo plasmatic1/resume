@@ -24,7 +24,7 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-0.7in}
+\addtolength{\topmargin}{-0.60in}
 \addtolength{\textheight}{1.0in}
 
 \usepackage{xcolor}
@@ -50,6 +50,9 @@
 
 %-------------------------
 % Custom commands
+
+\def\ungap{\vspace{-.04in}}
+
 \newcommand{\resumeItem}[2]{
   \item\small{
     \textbf{#1}{: #2 \vspace{-4pt}}
@@ -61,7 +64,7 @@
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       #1 & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#3} | \textbf{\small #4} & \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -81,11 +84,31 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textit{\small#2} \\
     \end{tabular*} \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#3} | \textbf{\small #4} & \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProject}[3]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} | \textbf{\small#2} \\
+    \end{tabular*} 
+    \vspace{-5pt}
+    \resumeItemListStart
+      \resumeText{#3}
+    \resumeItemListEnd
+}
+
+\newcommand{\resumeSubheadingNoSkills}[4]{
+  \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small#2} \\
+    \end{tabular*} \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#3} & \\
     \end{tabular*}\vspace{-5pt}
 }
 

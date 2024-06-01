@@ -37,11 +37,11 @@
             \headerSep
         \faPhoneSquare\ \phone\hspace{1pt}
             \headerSep
-        \href{https://github.com/\github/}{\faGithub\ \github}
+        \href{https://github.com/\github/}{\faGithub\ github.com/\github}
             \headerSep
         \href{https://\website/}{\faGlobe\ \website}
             \headerSep
-        \href{https://www.linkedin.com/in/\linkedin/}{\faLinkedinSquare\ \linkedin}
+        \href{https://www.linkedin.com/in/\linkedin/}{\faLinkedinSquare\ linkedin.com/in/\linkedin}
     \end{center}
     }
 
@@ -53,21 +53,23 @@
 \newcommand{\skills}{
     \begin{resumeSection}{Skills}
         \resumeItem{Languages}{C, C++, Python, Java, Scala, Bash, Rust, JavaScript, TypeScript}
-        \vspace{-.05in}
+        \ungap
         \resumeItem{Tools/Platforms}{Linux, Docker, Nginx, DPDK, Django, Flask, Node, Express, Google Cloud Platform}
+        \ungap
+        \resumeItem{Concepts}{Computer Networking, Concurrency, Lock-Free Programming, High-Performance Computing, MVC Pattern}
     \end{resumeSection}
 }
 
 \newcommand{\educationCoursework}{
     \resumeItem{Coursework}
-        {Operating Systems, Algorithms, Data Structures, Databases, Object Oriented Programming, Statistics, Linear Algebra, Combinatorics}
+        {Multicore Programming, Operating Systems, Algorithms, Data Structures, Databases, Statistics, Linear Algebra, Object Oriented Programming}
     \vspace{2pt}
 }
 
 \newcommand{\educationUniversity}[1]{
-    \resumeSubheading
-    {University of Waterloo}{Sep 2021 -- Present}
-    {Honours Bachelor of Computer Science; cGPA: 95.10\%}{}
+    \resumeSubheadingNoSkills
+    {University of Waterloo}{Sep 2021 -- Apr 2026}
+    {Honours Bachelor of Computer Science; GPA: 95.10\%}{}
     \resumeItemListStart
         #1 % coursework
         \resumeItem{Scholarships}

@@ -3,32 +3,47 @@
 \usepackage{resumestyle}
 \usepackage[T1]{fontenc}
 
+\newcommand{\experienceDeshaw}{
+    \resumeSubheadingNoSkills{D. E. Shaw \& Co.}{June 2024 -- Aug 2024}
+    {Software Engineering Intern (Incoming)}{}
+    \resumeItemListStart
+        \resumeText{Researching and implementing real-time distributed systems for systematic trading activites}
+    \resumeItemListEnd
+}
+
 \newcommand{\experienceNvidia}{
-    \resumeSubheading{NVIDIA -- Software Engineering Intern (GeForce NOW Core Streaming)}{Jan 2024 -- Apr 2024}
-    {Engineering a high-performance video snapshotting tool to replay, troubleshoot, and collect metrics on streams (C++, Python)}{}
-    \vspace{-12pt}
+    \resumeSubheading{NVIDIA}{Jan 2024 -- Apr 2024}
+    {Software Engineering Intern (GeForce NOW Core Streaming)}{C++, Python}
+    \resumeItemListStart
+        \resumeText{Built a high-performance video snapshotting tool to troubleshoot GeForce NOW issues, a product with 20 million users}
+        \resumeText{Developed the tool to capture snapshots of raw frames and encoded bitstream on streaming servers, allowing the client to highlight corruption and other video-related issues}
+        \resumeText{Optimized the tool to process 750 MB/s of raw frames (4K 60fps NV12 frames) without performance hits (< 1fps drop)}
+        \resumeText{Updated video stream networking protocol to support remote configuration, triggering, and feedback for the snapshot tool directly from the client}
+        % \resumeText{Collaborated with senior team members to assess requirements, scope, and design of the feature}
+    \resumeItemListEnd
 }
 
 \newcommand{\experienceHuawei}{
-    \resumeSubheading{Huawei -- Software Engineering Intern (Computer Networking R\&D)}{May 2023 -- Aug 2023}
-    {Engineering protocols and libraries for high-performance, low-latency networks (C, DPDK)}{}
+    \resumeSubheading{Huawei}{May 2023 -- Aug 2023}
+    {Software Engineering Intern (Computer Networking R\&D)}{C, DPDK}
     \resumeItemListStart
+        \resumeText{Designed a connectionless and reliable transport layer protocol (UDP-based) for high-performance, low-latency networks}
         \resumeText{Created library using Dataplane Development Kit (DPDK) to process UDP packets, with up to 18x speed improvement over Linux kernel sockets}
-        \resumeText{Collaborated to design a connectionless and reliable transport layer protocol on top of UDP}
-        \resumeText{Designed and implemented library for the protocol in C, employing lock-free data structures and message passing to achieve processing of 150+ concurrent connections on a single machine} % maybe mention 10gbps
-        \resumeText{Developed logging software to track and troubleshoot performance with minimal (\texttt{\textless}\texttt{\textless}1\%) impact on runtime}
-        \resumeText{Used tools such as gprof, gdb, and dpdk-pdump to resolve complex performance, networking, and concurrency issues}
+        \resumeText{Architected and implemented library for the protocol in C, employing lock-free data structures and message passing to achieve processing of 150+ concurrent connections on a single machine} % maybe mention 10gbps
+        % \resumeText{Developed logging software to track and troubleshoot performance with minimal (\texttt{\textless}\texttt{\textless}1\%) impact on runtime}
+        % \resumeText{Used tools such as gprof, gdb, and dpdk-pdump to resolve complex performance, networking, and concurrency issues}
     \resumeItemListEnd
 }
 
 \newcommand{\experienceAMD}{
     \resumeSubheading
-        {AMD -- Software Engineering Intern}{May 2022 -- Aug 2022}
-        {Developed and maintained debugger for 200+ Kernel-Mode Driver developers across AMD (C++, Python)}{}
+        {AMD}{May 2022 -- Aug 2022}
+        {Software Engineering Intern}{C++, Python, GTest}
         \resumeItemListStart
+            \resumeText{Developed and maintained debugger for 200+ Kernel-Mode Driver developers across AMD}
             \resumeText{Added feature to inspect hardware scheduled queues, enabling debugging of critical launch-gating issues}
-            \resumeText{Proposed and implemented improvements used across unit (GTest, GMock) and CI test infrastructure, reducing test code size by up to 50\%}
-            \resumeText{Automated formatting of tables, nested lists, and dictionaries, ensuring consistent output and deduplication of code}
+            \resumeText{Proposed and implemented improvements across unit test (GTest) and CI pipeline, reducing test code size by up to 50\%}
+            % \resumeText{Automated formatting of tables, nested lists, and dictionaries, ensuring consistent output and deduplication of code}
         \resumeItemListEnd
 }
 
@@ -86,9 +101,10 @@
 
 \newcommand{\experiencesDefault}{
     \begin{resumeSection}{Experience}
+        \experienceDeshaw
         \experienceNvidia
         \experienceHuawei
         \experienceAMD
-        \experienceWeplate
+        % \experienceWeplate
     \end{resumeSection}
 }

@@ -1,0 +1,3 @@
+- present -> apr 2026!!!
+- move skills (per proj/job) onto header
+- move proj info to separate line after header
