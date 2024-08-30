@@ -1,6 +1,6 @@
 # resume
 
-**Note: Due to privacy reasons, I'll be privatizing any further changes to my resume and so this repository will be archived.**
+**Note: Due to privacy reasons, I'll be privatizing any further changes to my resume and archiving this repository.**
 
 A fork of `sb2nov/resume` with my own resume and some additional features, including:
 
